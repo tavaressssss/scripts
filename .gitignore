@@ -1,0 +1,8 @@
+pdfs/
+.venv/
+projects/
+pyvenv.cfg
+txt_scripts (zabbix-backups-etc)/
+Mastering Python and GitHub for Pro.txt
+csvfile.csv
+tarefas.txt
