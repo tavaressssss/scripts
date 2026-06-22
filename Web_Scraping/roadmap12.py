@@ -54,3 +54,4 @@ def extract_books(url1):
     except requests.exceptions.RequestException as e:
         print(f"Failed to retrieve the page. Status code: {e}")
 extract_books(url1)
+
