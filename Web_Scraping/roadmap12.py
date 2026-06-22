@@ -16,13 +16,14 @@ headers = {
 }
 
 csv_file = "Web_Scraping_Documents_CSV/books.csv"
-def extract_product_titles(url1):
+def extract_books(url1):
     response = requests.get(url1, headers=headers)
     try:
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
         products = soup.select("article.product_pod > h3 > a")
         posicao_do_livro_especifico = None
+        nome_do_livro_especifico = None
         print("Products:")
 
         for idx, product in enumerate(products, start=1):
@@ -30,7 +31,11 @@ def extract_product_titles(url1):
             titulo = product['title'].strip()
             if titulo == "Tipping the Velvet":
                 posicao_do_livro_especifico = idx
-        print(f"Specific Product:\n {posicao_do_livro_especifico}- {titulo}")
+                nome_do_livro_especifico = titulo
+        if posicao_do_livro_especifico:
+            print(f"\nSpecific Product:\n {posicao_do_livro_especifico} - {nome_do_livro_especifico}")
+        else:
+            print("\nO Specific Product não estava nesta página.")
 
         livros = soup.select("article.product_pod")
         with open(csv_file, "w", newline="", encoding="utf-8") as csvfile:
@@ -48,4 +53,4 @@ def extract_product_titles(url1):
 
     except requests.exceptions.RequestException as e:
         print(f"Failed to retrieve the page. Status code: {e}")
-extract_product_titles(url1)
+extract_books(url1)
