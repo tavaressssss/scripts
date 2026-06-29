@@ -29,7 +29,7 @@ def atualizar_json(novo_dicionario):
 
 
 if __name__ == "__main__":
-    # Este código SÓ corre se executar python roadmap18.py diretamente.
+    # Este código só corre se executar python roadmap18.py diretamente.
     # Serve para testar se a máquina está boa, sem estragar o código principal.
     print("A testar o módulo de JSON isoladamente...")
     teste = {"headline": "Teste de Modulos", "link": "teste.com/1"}
