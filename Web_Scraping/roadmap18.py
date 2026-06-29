@@ -11,11 +11,11 @@ def atualizar_json(novo_dicionario):
         except json.JSONDecodeError:
             dados_existentes = [] 
             
-    link_da_noticia_nova = novo_dicionario["link"]
+    link_da_noticia_nova = novo_dicionario["id"]
     ja_existe = False 
     
     for noticia_antiga in dados_existentes:
-        if noticia_antiga["link"] == link_da_noticia_nova:
+        if noticia_antiga["id"] == link_da_noticia_nova:
             ja_existe = True
             break
             
@@ -23,9 +23,9 @@ def atualizar_json(novo_dicionario):
         dados_existentes.append(novo_dicionario)
         with open(ficheiro, mode="w", encoding="utf-8") as file:
             json.dump(dados_existentes, file, indent=4, ensure_ascii=False)
-        print(f"NOVA ENTRADA: Guardado no disco!")
+        print(f"Guardado no disco!")
     else:
-        print(f"DUPLICADO: O link '{link_da_noticia_nova}' já existe. Ignorado.")
+        print(f"O id '{link_da_noticia_nova}' já existe. Ignorado.")
 
 
 if __name__ == "__main__":

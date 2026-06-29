@@ -1,27 +1,27 @@
 [
     {
         "id": 1,
-        "headline": "Tidal AI Policy",
-        "link": "https://tidal.com/ai-policy"
+        "headline": "Mag 7 starting to underperform [pdf]",
+        "link": "https://www.apollo.com/content/dam/apolloaem/pdf/daily-spark/2026/jun/28/062826-Mag7.pdf"
     },
     {
         "id": 2,
-        "headline": "Sandia National Labs SA3000 8085 CPU",
-        "link": "https://www.cpushack.com/2026/06/03/sandia-national-labs-sa3000-8085-cpu/"
+        "headline": "RocketLab Acquires Iridium",
+        "link": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-acquire-iridium-historic-deal-creating-fully"
     },
     {
         "id": 3,
-        "headline": "HackerRank open sourced its ATS. My resume scored 90/100. Oh wait 74. No – 88",
-        "link": "https://danunparsed.com/p/hackerrank-open-source-ats"
+        "headline": "What happens when you run a CUDA kernel?",
+        "link": "https://fergusfinn.com/blog/what-happens-when-you-run-a-gpu-kernel/"
     },
     {
         "id": 4,
-        "headline": "Type-checked non-empty strings",
-        "link": "https://exploring-better-ways.bellroy.com/haskell-koan-type-checked-non-empty-strings.html"
+        "headline": "Building Principia for Windows XP",
+        "link": "https://voxelmanip.se/2026/06/28/building-principia-for-windows-xp/"
     },
     {
         "id": 5,
-        "headline": "Building Principia for Windows XP",
-        "link": "https://voxelmanip.se/2026/06/28/building-principia-for-windows-xp/"
+        "headline": "Sandia National Labs SA3000 8085 CPU",
+        "link": "https://www.cpushack.com/2026/06/03/sandia-national-labs-sa3000-8085-cpu/"
     }
 ]
