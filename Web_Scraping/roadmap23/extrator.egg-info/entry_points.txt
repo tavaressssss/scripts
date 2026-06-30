@@ -1,0 +1,2 @@
+[console_scripts]
+extrator = scraper:main

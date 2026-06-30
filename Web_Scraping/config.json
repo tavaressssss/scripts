@@ -1,0 +1,24 @@
+{
+  "bot_settings": {
+    "target_url": "https://example-store.com/products",
+    "request_delay": 2.5,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+  },
+  "storage": {
+    "output_dir": "./data",
+    "filename": "scraped_data.json"
+  },
+  "selectors": {
+    "product_name": ".product-title",
+    "product_price": ".price-tag"
+  },
+  "max_pages":{
+    "pages": 2
+  },
+  "timeout": {
+    "timeout" : 500
+  },
+  "output_format": {
+    "format" : "csv"
+  } 
+}
